@@ -14,15 +14,17 @@ class triangulo
         this.altura = altura;
     }
 
-    //formula para calcular el area del triangulo
-    public Double Calcular_area()
+    //cálculo del area 
+    public Double Calcular_area() // Calcular_area es una funcion que devuelve un valor double utilizada para calcular el area
     {
+        // Usa la fórmula (base × altura) / 2 y no recibe argumentos porque utiliza los atributos del objeto
         return (base_triangulo * altura) / 2;
     }
 
-    //formula para calcular el perimetro
-    public Double Calcular_perimetro()
+    //cálculo del perimetro
+    public Double Calcular_perimetro()// Calcular_perimetro es una funcion que devuelve un valor double, se usa para calcular el perimetro
     {
+        // Asume que los tres lados del triángulo
         return 3 * base_triangulo;
     }
 
@@ -42,15 +44,17 @@ class rectangulo
         this.alto = alto;
     }
 
-    //formula para calcular el area 
-    public Double Calcular_area()
+    //cálculo del area 
+    public Double Calcular_area() // Calcular_area es una funcion que devuelve un valor double
     {
+        // aplica la formula ancho * alto y no requiere argumentos externos porque usa los atributos del objeto
         return ancho * alto;
     }
 
-    //formula para calcular el perimetro
-    public Double Calcular_perimetro()
+    //cálculo del perimetro
+    public Double Calcular_perimetro() // Calcular_perimetro es una funcion que devuelve un valor double
     {
+        // aplica la formula 2 * (ancho + alto)
         return 2 * (ancho + alto);
     }
 
