@@ -2,6 +2,7 @@
 //crear clase que represente un triangulo
 class triangulo
 {
+    //atributos
     private Double base_triangulo;  //atributo para la base
     private Double altura;  //atributo para la altura
 
