@@ -3,12 +3,13 @@
 class triangulo
 {
     //atributos
-    private Double base_triangulo;  //atributo para la base
-    private Double altura;  //atributo para la altura
+    private Double base_triangulo;  //atributo que guarda el valor de la base
+    private Double altura;  //atributo que guarada el valor de la altura
 
-    //metodo constructor
+    //metodo constructor ejerce la funcion de inicializar los valores de base y altura con los datos que recibe
     public triangulo(Double base_triangulo, Double altura)
     {
+        // La palabra 'this' se usa para diferenciar entre el atributo y el parametro
         this.base_triangulo = base_triangulo;
         this.altura = altura;
     }
@@ -31,10 +32,10 @@ class triangulo
 class rectangulo
 {
     //atributos
-    private Double ancho;  //atributo para la anchura
-    private Double alto;  //atributo para la altura
+    private Double ancho;  //atributo que guarda el valor para la anchura
+    private Double alto;  //atributo que guarda el valor para la altura
 
-    //metodo constructor
+    //metodo constructor usado para asignar valores iniciales al ancho y alto del rectangulo al momento de crearlo
     public rectangulo(Double ancho, Double alto)
     {
         this.ancho = ancho;
@@ -62,14 +63,14 @@ class Program
         // crear un triangulo con base 4 y altura 4
         triangulo mi_triangulo = new triangulo(4, 4);
         System.Console.WriteLine("Triangulo:");
-        System.Console.WriteLine("Area: " + mi_triangulo.Calcular_area());
-        System.Console.WriteLine("Perimetro: " + mi_triangulo.Calcular_perimetro());
+        System.Console.WriteLine("Area: " + mi_triangulo.Calcular_area()); //muestra el area calculada
+        System.Console.WriteLine("Perimetro: " + mi_triangulo.Calcular_perimetro()); //muestra el perimetro calculado
 
         // crear un rectangulo con ancho 5 y alto 3
         rectangulo mi_rectangulo = new rectangulo(5, 3);
         System.Console.WriteLine("\nRectangulo:");
-        System.Console.WriteLine("area: " + mi_rectangulo.Calcular_area());
-        System.Console.WriteLine("Perimetro: " + mi_rectangulo.Calcular_perimetro());
+        System.Console.WriteLine("area: " + mi_rectangulo.Calcular_area()); //muestra el area calculada
+        System.Console.WriteLine("Perimetro: " + mi_rectangulo.Calcular_perimetro()); //muestra el perimetro calculado
     }
 }
 
