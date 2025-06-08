@@ -4,7 +4,7 @@ class triangulo
 {
     //atributos
     private Double base_triangulo;  //atributo que guarda el valor de la base
-    private Double altura;  //atributo que guarada el valor de la altura
+    private Double altura;  //atributo que guarda el valor de la altura
 
     //metodo constructor ejerce la funcion de inicializar los valores de base y altura con los datos que recibe
     public triangulo(Double base_triangulo, Double altura)
@@ -17,7 +17,7 @@ class triangulo
     //cálculo del area 
     public Double Calcular_area() // Calcular_area es una funcion que devuelve un valor double utilizada para calcular el area
     {
-        // Usa la fórmula (base × altura) / 2 y no recibe argumentos porque utiliza los atributos del objeto
+        // Usa la fórmula (base * altura) / 2 y no recibe argumentos porque utiliza los atributos del objeto
         return (base_triangulo * altura) / 2;
     }
 
