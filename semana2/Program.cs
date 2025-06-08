@@ -60,15 +60,15 @@ class Program
     {
         // crear un triangulo con base 4 y altura 4
         triangulo mi_triangulo = new triangulo(4, 4);
-        System.Console.WriteLine("Triángulo:");
-        System.Console.WriteLine("Área: " + mi_triangulo.Calcular_area());
-        System.Console.WriteLine("Perímetro: " + mi_triangulo.Calcular_perimetro());
+        System.Console.WriteLine("Triangulo:");
+        System.Console.WriteLine("Area: " + mi_triangulo.Calcular_area());
+        System.Console.WriteLine("Perimetro: " + mi_triangulo.Calcular_perimetro());
 
         // crear un rectangulo con ancho 5 y alto 3
         rectangulo mi_rectangulo = new rectangulo(5, 3);
-        System.Console.WriteLine("\nRectángulo:");
-        System.Console.WriteLine("Área: " + mi_rectangulo.Calcular_area());
-        System.Console.WriteLine("Perímetro: " + mi_rectangulo.Calcular_perimetro());
+        System.Console.WriteLine("\nRectangulo:");
+        System.Console.WriteLine("area: " + mi_rectangulo.Calcular_area());
+        System.Console.WriteLine("Perimetro: " + mi_rectangulo.Calcular_perimetro());
     }
 }
 
