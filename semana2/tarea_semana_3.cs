@@ -5,6 +5,13 @@ public class Estudiante //creacion de clase estudiante
     private string nombres;
     private string apellidos;
     private string direccion;
-}
+    private string[] telefonos;  // array para los tres teléfonos
+
+    
+    
+
+ }
+
+
 
     
