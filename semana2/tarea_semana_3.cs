@@ -16,9 +16,28 @@ public class Estudiante //creacion de clase estudiante
         this.direccion = direccion;
         this.telefonos = telefonos;
     }
-    
+    //metodo que devuelve todos los datos del estudiante
+    public string Mostrar_informacion()
+    {
+         //se almacena la informacion del estudiante
+        string informacion = "ID: " + id + "\n";
+        informacion += "Nombres: " + nombres + "\n";
+        informacion += "Apellidos: " + apellidos + "\n";
+        informacion += "Direccion: " + direccion + "\n";
+        informacion += "Telefonos:\n";
 
+        //se recorre el array de telefonos para agregarlos uno por uno a la variable de informacion
+        for (int i = 0; i < telefonos.Length; i++)
+        {
+            informacion += "- " + telefonos[i] + "\n";
+        }
+
+        return informacion;
+    }
+    
  }
+
+
 
 
 
