@@ -33,9 +33,28 @@ public class Estudiante //creacion de clase estudiante
         }
 
         return informacion;
-    }
-    
+    }  
  }
+
+//ejecucion del programa
+public class Programa
+{
+    static void Main(string[] args)
+    {
+        //creacion de los datos del estudiante
+        int id = 1;
+        string nombres = "Ezequiel";
+        string apellidos = "Marquez";
+        string direccion = "Av. Central y Calle 24";
+        string[] telefonos = new string[3] { "0927234567", "0985349781", "0981651321" };
+
+        // creacion del objeto estudiante
+        Estudiante estudiante1 = new Estudiante(id, nombres, apellidos, direccion, telefonos);
+
+        System.Console.WriteLine(estudiante1.Mostrar_informacion()); //se imprime la informacion del estudiante
+        System.Console.ReadLine();
+    } 
+} 
 
 
 
